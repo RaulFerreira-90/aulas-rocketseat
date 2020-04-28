@@ -5,7 +5,7 @@
   "username": "postgres",
   "password": "docker",
   "database": "gostack_gobarber",
-  "migations": [
+  "migrations": [
     "./src/database/migrations/*.ts"
   ],
   "cli": {
