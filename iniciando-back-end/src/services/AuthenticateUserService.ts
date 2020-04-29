@@ -24,7 +24,7 @@ class AuthenticateUserService {
     const user = await usersRepository.findOne({ where: { email } });
 
     if (!user) {
-      throw new AppError('Incorrect email/password comination.', 401);
+      throw new AppError('Incorrect email/password combination.', 401);
     }
 
     const { secret, expiresIn } = authConfig.jwt;
@@ -32,7 +32,7 @@ class AuthenticateUserService {
     const passwordMatched = await compare(password, user.password);
 
     if (!passwordMatched) {
-      throw new AppError('Incorrect email/password comination.', 401);
+      throw new AppError('Incorrect email/password combination.', 401);
     }
 
     const token = sign({}, secret, {
