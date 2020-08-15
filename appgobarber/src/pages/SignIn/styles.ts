@@ -1,10 +1,10 @@
-import styled from 'styled-components/native'
+import styled from 'styled-components/native';
 
-export const Container = styled.View`
-`;
+export const Container = styled.View``;
 
 export const Title = styled.Text`
   font-size: 20px;
   color: #f4ede8;
-  font-family: 'Roboto-Medium'
+  font-family: 'Roboto-Medium';
+  margin: 64px 0 24px;
 `;
