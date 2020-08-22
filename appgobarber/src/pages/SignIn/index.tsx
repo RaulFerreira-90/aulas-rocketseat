@@ -21,7 +21,7 @@ const SignIn: React.FC = () => {
 
       <Button
         onPress={() => {
-          console.log('Deu');
+          console.log('Deu')
         }}
       >
         Entrar
