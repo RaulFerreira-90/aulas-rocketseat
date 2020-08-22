@@ -8,18 +8,26 @@ import logoImg from '../../assets/logo.png';
 
 import { Container, Title } from './styles';
 
-const SignIn: React.FC = () => (
-  <Container>
-    <Image source={logoImg} />
+const SignIn: React.FC = () => {
+  return (
+    <Container>
+      <Image source={logoImg} />
 
-    <Title>Faça seu logon</Title>
+      <Title>Faça seu logon</Title>
 
-    <Input />
+      <Input name="email" icon="mail" placeholder="E-mail" />
 
-    <Input />
+      <Input name="password" icon="Senha" placeholder="Senha" />
 
-    <Button>Entrar</Button>
-  </Container>
-);
+      <Button
+        onPress={() => {
+          console.log('Deu');
+        }}
+      >
+        Entrar
+      </Button>
+    </Container>
+  );
+};
 
 export default SignIn;
