@@ -137,9 +137,7 @@ const SignUp: React.FC = () => {
               />
 
               <Button
-                onPress={() => {
-                  formRef.current?.submitForm();
-                }}
+                onPress={() => formRef.current?.submitForm()}
               >
                 Entrar
               </Button>
